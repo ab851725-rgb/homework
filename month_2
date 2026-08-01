@@ -1,0 +1,40 @@
+class Car:
+    def __init__(self, color, model, max_speed):
+        self.color = color
+        self.model = model
+        self.max_speed = max_speed
+
+    def drive_in(self, location):
+        self.location = location
+
+    def change_color(self, new_color):
+        self.color = new_color
+
+
+
+
+
+
+car_1 = Car('red', 'kia', 150)
+
+
+
+class ChampionInfo:
+    def __init__(self, name, hp, mp, atk, passive_ability, abily_1, abily_2, abily_3, abily_4):
+        self.name = name
+        self.hp = hp
+        self.mp = mp
+        self.atk = atk
+        self.passive_ability = passive_ability
+        self.abily_1 = abily_1
+        self.abily_2 = abily_2
+        self.abily_3 = abily_3
+        self.abily_4 = abily_4
+
+
+champion = ChampionInfo()
+
+
+
+
+
