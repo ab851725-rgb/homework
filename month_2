@@ -12,27 +12,25 @@ class Car:
 
 
 
-
-
-
 car_1 = Car('red', 'kia', 150)
+car_2 = Car('black', 'bwb', 730)
+print(car_2)
 
 
+# class ChampionInfo:
+#     def __init__(self, name, hp, mp, atk, passive_ability, abily_1, abily_2, abily_3, abily_4):
+#         self.name = name
+#         self.hp = hp
+#         self.mp = mp
+#         self.atk = atk
+#         self.passive_ability = passive_ability
+#         self.abily_1 = abily_1
+#         self.abily_2 = abily_2
+#         self.abily_3 = abily_3
+#         self.abily_4 = abily_4
 
-class ChampionInfo:
-    def __init__(self, name, hp, mp, atk, passive_ability, abily_1, abily_2, abily_3, abily_4):
-        self.name = name
-        self.hp = hp
-        self.mp = mp
-        self.atk = atk
-        self.passive_ability = passive_ability
-        self.abily_1 = abily_1
-        self.abily_2 = abily_2
-        self.abily_3 = abily_3
-        self.abily_4 = abily_4
 
-
-champion = ChampionInfo()
+# champion = ChampionInfo()
 
 
 
