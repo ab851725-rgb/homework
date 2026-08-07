@@ -10,6 +10,7 @@ class Car:
     def change_color(self, new_color):
         self.color = new_color
 
+    def printObject():
 
 
 car_1 = Car('red', 'kia', 150)
