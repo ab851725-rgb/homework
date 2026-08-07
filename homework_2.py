@@ -5,7 +5,7 @@ class Person:
         self.occupation = occupation
         self.friend_name = friend_name
 
-    def printObject(self):
+    def print_object(self):
         print(f"Привет, меня зовут {self.name}, я друг {self.friend_name}, я родился {self.birth_day}, работаю {self.occupation}")
 
 class Classmate(Person):
@@ -13,7 +13,7 @@ class Classmate(Person):
         super().__init__(name, birth_day, occupation, friend_name)
         self.group = group
 
-    def printObject(self):
+    def print_object(self):
         print(f"Привет, меня зовут {self.name}, я друг {self.friend_name}, я родился {self.birth_day}, работаю {self.occupation}, номер моей группы {self.group}")
 
 
@@ -22,7 +22,7 @@ class Friend(Person):
         super().__init__(name, birth_day, occupation, friend_name)
         self.hobby = hobby
 
-    def printObject(self):
+    def print_object(self):
         print(f"Привет, меня зовут {self.name}, я друг {self.friend_name}, я родился {self.birth_day}, работаю {self.occupation}, мое хобби {self.hobby}")
 
 
@@ -31,7 +31,7 @@ class Best_friend(Friend):
         super().__init__(name, birth_day, occupation, friend_name)
         self.memory = shared_memory
 
-    def printMemory(self):
+    def print_memory(self):
         print(f"наше общее воспоминание {self.memory}")
 
 
@@ -49,5 +49,5 @@ me = Person('Арсений', '21.03.2003', 'rap', 'Ванька')
 # me.printObject()
 people = [classmate_1, classmate_2, friend_1, friend_2, me]
 for p in people:
-    p.printObject()
+    p.print_object()
     
