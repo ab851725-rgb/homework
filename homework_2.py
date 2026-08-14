@@ -26,13 +26,13 @@ class Friend(Person):
         print(f"Привет, меня зовут {self.name}, я друг {self.friend_name}, я родился {self.birth_day}, работаю {self.occupation}, мое хобби {self.hobby}")
 
 
-class Best_friend(Friend):
-    def __init__(self, name, birth_day, occupation, friend_name, shared_memory):
-        super().__init__(name, birth_day, occupation, friend_name)
+class BestFriend(Friend):
+    def __init__(self, name, birth_day, occupation, friend_name, hobby, shared_memory):
+        super().__init__(name, birth_day, occupation, friend_name, hobby)
         self.memory = shared_memory
 
-    def print_memory(self):
-        print(f"наше общее воспоминание {self.memory}")
+    def print_object(self):
+        print(f"Привет, меня зовут {self.name}, я друг {self.friend_name}, я родился {self.birth_day}, работаю {self.occupation}, мое хобби {self.hobby}, наше общее воспоминание {self.memory}")
 
 
 classmate_1 = Classmate('Жека', '21.05.2000', 'программист', 'Ванька', '8a')
@@ -40,14 +40,13 @@ classmate_2 = Classmate('Васек', '15.04.2007', 'рэпер', 'Ванька'
 friend_1 = Friend('Дима', '07.10.2010', 'дизайнер', 'Ванька', 'волонтер')
 friend_2 = Friend('Ян', '05.12.2005', 'адвокат', 'Ванька', 'рэп')
 me = Person('Арсений', '21.03.2003', 'rap', 'Ванька')
-# bestt_friend = ('bimbo', '23.09.2031', 'rap rap rap', )
+bestt_friend = BestFriend('bimbo', '23.09.2031', 'айтишник', 'женьки', 'rap', 'rap rap rap',)
 
 # classmate_1.printObject()
 # classmate_2.printObject()
 # friend_1.printObject()
 # friend_2.printObject()
 # me.printObject()
-people = [classmate_1, classmate_2, friend_1, friend_2, me]
+people = [classmate_1, classmate_2, friend_1, friend_2, me, bestt_friend]
 for p in people:
     p.print_object()
-    
