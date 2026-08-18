@@ -10,7 +10,6 @@ class User:
         self.role = User.default_role
         self.password = User.default_password
         User.user_count += 1 
-        
 
 
 user1 = User('Igor', '992394294')

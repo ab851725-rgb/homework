@@ -14,7 +14,7 @@ class Person:
         return self.__occupation
 
     def print_object(self):
-        print(f"Привет, меня зовут {self.name}, высшее образование {self.get_education()}, я родился {self.birth_day}, работаю {self.get_occupation()}")
+        print(f"Привет, меня зовут {self.name}, есть ли высшее образование {self.get_education()}, я родился {self.birth_day}, работаю {self.get_occupation()}")
 
 class Classmate(Person):
     def __init__(self, name, birth_day, occupation, higher_education, group):
@@ -22,7 +22,7 @@ class Classmate(Person):
         self.group = group
 
     def print_object(self):
-        print(f"Привет, меня зовут {self.name}, высшее образование {self.get_education()}  я родился {self.birth_day}, работаю {self.get_occupation()}, номер моей группы {self.group}")
+        print(f"Привет, меня зовут {self.name}, есть ли высшее образование {self.get_education()}  я родился {self.birth_day}, работаю {self.get_occupation()}, номер моей группы {self.group}")
 
 
 class Friend(Person):
@@ -31,7 +31,7 @@ class Friend(Person):
         self.hobby = hobby
 
     def print_object(self):
-        print(f"Привет, меня зовут {self.name}, высшее образование {self.get_education()}, я родился {self.birth_day}, работаю {self.get_occupation()}, мое хобби {self.hobby}")
+        print(f"Привет, меня зовут {self.name}, есть ли высшее образование {self.get_education()}, я родился {self.birth_day}, работаю {self.get_occupation()}, мое хобби {self.hobby}")
 
 
 class BestFriend(Friend):
@@ -40,7 +40,7 @@ class BestFriend(Friend):
         self.memory = shared_memory
 
     def print_object(self):
-        print(f"Привет, меня зовут {self.name}, высшее образование {self.get_education()}, я родился {self.birth_day}, работаю {self.get_occupation()}, мое хобби {self.hobby}, наше общее воспоминание {self.memory}")
+        print(f"Привет, меня зовут {self.name}, есть ли высшее образование {self.get_education()}, я родился {self.birth_day}, работаю {self.get_occupation()}, мое хобби {self.hobby}, наше общее воспоминание {self.memory}")
 
 
 classmate_1 = Classmate('Жека', '21.05.2000', 'программист', True, '8a')
