@@ -18,10 +18,9 @@ def add_student(connection, name, age, city):
     ''', (name, age, city))
     connection.commit()
 
-def dell_student(connection)
-
-if __name__ == '__main__':
-    conn = sqlite3.connect('database.sqlite3')
-    create_tables(conn)
-    add_student(conn, 'Igor', 30, 'Bishkek')
-    add_student(conn, 'Jeka', 22, 'Ingush')
+def dell_student(connection):
+    if __name__ == '__main__':
+        conn = sqlite3.connect('database.sqlite3')
+        create_tables(conn)
+        add_student(conn, 'Igor', 30, 'Bishkek')
+        add_student(conn, 'Jeka', 22, 'Ingush')
